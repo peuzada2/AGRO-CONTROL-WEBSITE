@@ -263,5 +263,14 @@
     width: 100%;
       border-radius: 10px;
     }
+  
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 0.9em;
+  }
+  
 }
 

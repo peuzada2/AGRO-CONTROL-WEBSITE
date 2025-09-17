@@ -1,0 +1,75 @@
+:root {
+  --bg: #363636; /* slate-900 */
+  --text: #ffffff; /* slate-200 */
+  --accent: #22d3ee; /* cyan-400 */
+  --main-color: #006631;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/IMG_3252.webp);
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.animate__container-contabilidade-title {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 50px 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     animation: animate__fadeInUp;
+    animation-duration: 1s;
+  }
+
+
+  .about-service {
+    display: flex;
+    height: 80vh;
+    color: #006631;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-about-service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 60px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    border-radius: 20px;
+  }
+
+  .about-service h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .about-service p {
+    font-size: 1.3em;
+  }
