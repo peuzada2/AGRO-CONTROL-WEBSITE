@@ -1,5 +1,5 @@
 
-window.revelar = ScrollReveal({reset:true})
+window.revelar = ScrollReveal({})
 
 revelar.reveal('.text-quem-somos', { 
     delay: 100,
@@ -34,6 +34,12 @@ revelar.reveal('#ns-04', {
 revelar.reveal('#contact-grid', { 
     delay: 160,
     duration: 800,
+    distance:'90px' 
+});
+
+revelar.reveal('.trator-about-service', { 
+    delay: 350,
+    duration: 1200,
     distance:'90px' 
 });
 

@@ -7,6 +7,7 @@
   <meta name="description" content="Conheça os serviços de contabilidade geral da Agro Control. Organização financeira, gestão contábil e soluções completas para empresas e produtores rurais.">
   <link rel="stylesheet" href="./src/styles/style.css">
   <link rel="stylesheet" href="./src/styles/contabilidadegeral.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" href="./src/styles/mobile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,9 +19,9 @@
             <img class="icon-agro-header" src="./public/MODELO LOGO PADRÃO NO BG.png" alt="">
         </a>
         <nav class="nav-bar-main">
-            <a href="#animate__home-content" class="header-nav" id="header-nav01">home</a>
-            <a href="#container-quem-somos" class="header-nav" id="header-nav02">Quem somos</a>
-            <a href="#container-nossos-servicos" class="header-nav" id="header-nav03">Serviços</a>
+            <a href="#hero" class="header-nav" id="header-nav01">home</a>
+            <a href="#about-service" class="header-nav" id="header-nav02">Oque é?</a>
+            <a href="#container-nossos-servicos" class="header-nav" id="header-nav03">Benefícios</a>
             <a href="" class="header-nav" id="header-nav04">especialidades</a>
             <a href="" class="header-nav" id="header-nav05">blog</a>
         </nav>
@@ -40,9 +41,9 @@
             </header>
     </div>
     <nav class="mobileMenu" id="mobileMenu">
-        <a href="#animate__home-content" class="header-nav" id="header-nav01">home</a>
-        <a href="#container-quem-somos" class="header-nav" id="header-nav01">Quem somos</a>
-        <a href="#container-nossos-servicos" class="header-nav" id="header-nav01">Serviços</a>
+        <a href="#hero" class="header-nav" id="header-nav01">home</a>
+        <a href="#about-service" class="header-nav" id="header-nav01">Oque é?</a>
+        <a href="#container-nossos-servicos" class="header-nav" id="header-nav01">Benefícios</a>
         <a href="" class="header-nav" id="header-nav01">especialidades</a>
         <a href="" class="header-nav" id="header-nav01">blog</a>
         <a href="https://api.whatsapp.com/send/?phone=5577999665814&
@@ -54,7 +55,7 @@
     </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="animate__container-contabilidade-title animate__fadeInUp">
         <i class="fa-solid fa-angles-down fa-fade" style="color: #ffffff; font-size: 2em;"></i>
       <h1>Contabilidade Geral</h1>
@@ -63,26 +64,32 @@
   </section>
 
   <!-- SOBRE O SERVIÇO -->
-  <section class="about-service">
+  <section class="about-service" id="about-service">
     <div class="container-about-service">
       <h2><i class="fa-solid fa-book"></i> O que é Contabilidade Geral?</h2>
       <p>
-        A contabilidade geral da Agro Control oferece uma visão completa e estratégica das 
-        finanças da sua empresa. <br> Nosso objetivo é organizar e registrar todas as operações 
-        contábeis, garantindo <br>clareza nos resultados e segurança para a tomada de decisões.
+        A <strong>contabilidade geral da Agro Control</strong> oferece uma visão completa e estratégica das 
+        finanças da sua empresa. <strong>
+          Nosso objetivo é organizar e registrar todas as operações
+          contábeis
+        </strong>, garantindo clareza nos resultados e segurança para a tomada de decisões.
       </p>
+      <a href="#" class="button-quem-somos" id="button-quem-somos">TIRE DÚVIDAS</a>
     </div>
+    <picture class="trator-about-service" id="trator-about-service"></picture>
   </section>
 
   <!-- BENEFÍCIOS -->
   <section class="benefits">
-    <div class="container">
-      <h2><i class="fa-solid fa-check-circle"></i> Benefícios para sua empresa</h2>
-      <ul>
-        <li><i class="fa-solid fa-leaf"></i> Controle preciso das finanças</li>
-        <li><i class="fa-solid fa-file-invoice-dollar"></i> Conformidade com normas fiscais e legais</li>
-        <li><i class="fa-solid fa-chart-line"></i> Relatórios claros e confiáveis</li>
-        <li><i class="fa-solid fa-tractor"></i> Soluções adaptadas ao produtor rural</li>
+    <h2><i class="fa-solid fa-check-circle"></i> Benefícios para sua empresa</h2>
+    <div class="container-beneficios">
+      <ul class="container-cards-beneficios">
+        <li class="card-beneficios" id="card-beneficios01"><i class="fa-solid fa-leaf"></i> Controle preciso das finanças</li>
+        <li class="card-beneficios" id="card-beneficios02"><i class="fa-solid fa-file-invoice-dollar"></i> Conformidade com normas fiscais e legais</li>
+      </ul>
+      <ul class="container-cards-beneficios">
+        <li class="card-beneficios" id="card-beneficios03"><i class="fa-solid fa-chart-line"></i> Relatórios claros e confiáveis</li>
+        <li class="card-beneficios" id="card-beneficios04"><i class="fa-solid fa-tractor"></i> Soluções adaptadas ao produtor rural</li>
       </ul>
     </div>
   </section>
@@ -103,5 +110,8 @@
     </div>
   </footer>
   <script src="./src/scripts/menu-mobile.js"></script>
+  <script src="./src/scripts/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </body>
 </html>

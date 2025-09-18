@@ -29,6 +29,7 @@
   height: 80%;
   background-position-y: -220px;
 }
+
 }
 
 @media (min-width: 0px) and (max-width: 900px)  {
@@ -45,7 +46,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 90%;
       height: 60px;
       color: white;
       display: flex;
@@ -272,5 +273,52 @@
     font-size: 0.9em;
   }
   
+  .about-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trator-about-service {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .about-service h2 {
+  font-size: 2em;
+  font-weight: 800;
+  }
+
+  #button-quem-somos {
+    margin: 0px;
+  }
+
+  .container-beneficios {
+  flex-direction: column;
+  gap: 30px;
+ }
+
+ .card-beneficios {
+  margin: 0px;
+  width: 90%;
+  padding: 0px;
+ }
+
+  .container-about-service {
+    display: flex;
+  width: 80%;
+  padding: 30px 30px 0px 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .container-cards-beneficios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
 }
 
