@@ -401,7 +401,7 @@ a:hover {
 
     .card {
       display: flex;
-      height: 200px;
+      height: 150px;
       flex-direction: column;
       font-size: 18px;
       background: #ffffff;
