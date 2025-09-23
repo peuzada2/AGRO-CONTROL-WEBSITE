@@ -314,10 +314,15 @@
   padding: 0px;
  }
 
+ .benefits p {
+  text-align: center;
+  margin-bottom: 15px;
+ }
+
   .container-about-service {
     display: flex;
-  width: 80%;
-  padding: 30px 30px 0px 30px;
+  width: 90%;
+  padding: 30px 15px 0px 15px;
   text-align: center;
   align-items: center;
   justify-content: center;
