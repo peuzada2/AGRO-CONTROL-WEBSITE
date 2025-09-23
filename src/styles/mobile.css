@@ -165,7 +165,7 @@
 #button-ns-card {
     border: 2px solid var(--text);
     color: var(--text);
-    width: 100%;
+    width: 40%;
     text-align: center;
 }
 
@@ -226,8 +226,8 @@
 
   .text-quem-somos {
    font-size: 0.8em;
-   padding: 0px 20px;
-   width: 100%;
+   width: 90%;
+   padding: 0px;
    margin-top: 50px;
   }
 
@@ -245,17 +245,17 @@
     padding: 10px 40px;
   }
   .element-prev {
-    top: 45%;
-    width: 50px;
-    height: 50px;
+    top: 30%;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
     right: 0px;
   }
 
   .element-next {
-    top: 45%;
-    width: 50px;
-    height: 50px;
+    top: 30%;
+    width: 30px;
+    height: 30px;
     margin-left: 5px;
     left: 0px;
   }
@@ -275,6 +275,12 @@
   
   .hero p {
     font-size: 0.9em;
+  }
+
+  #header-nav06 {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 15px;
   }
   
   .about-service {
@@ -322,6 +328,26 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 100%;
+  }
+
+  .cta {
+    padding-top: 0px;
+  }
+
+  .container-cta {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .cta-card-text {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .img-card-cta {
+    height: 300px;
     width: 100%;
   }
 }
