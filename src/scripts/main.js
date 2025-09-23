@@ -43,6 +43,12 @@ revelar.reveal('.trator-about-service', {
     distance:'90px' 
 });
 
+revelar.reveal('.container-cta', { 
+    delay: 350,
+    duration: 1200,
+    distance:'90px' 
+});
+
 
 let lastScroll = 0;
     const header = document.getElementById("mainHeader");

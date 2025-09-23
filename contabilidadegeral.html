@@ -15,13 +15,11 @@
 <body>
   <!-- HEADER -->
    <header id="mainHeader">
-        <a href="index.html">
-            <img class="icon-agro-header" src="./public/MODELO LOGO PADRÃO NO BG.png" alt="">
-        </a>
+        <a href="index.html" class="header-nav" target="_blank" id="header-nav06"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></a>
         <nav class="nav-bar-main">
             <a href="#hero" class="header-nav" id="header-nav01">home</a>
             <a href="#about-service" class="header-nav" id="header-nav02">Oque é?</a>
-            <a href="#container-nossos-servicos" class="header-nav" id="header-nav03">Benefícios</a>
+            <a href="#benefits" class="header-nav" id="header-nav03">Benefícios</a>
             <a href="" class="header-nav" id="header-nav04">especialidades</a>
             <a href="" class="header-nav" id="header-nav05">blog</a>
         </nav>
@@ -80,16 +78,16 @@
   </section>
 
   <!-- BENEFÍCIOS -->
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <h2><i class="fa-solid fa-check-circle"></i> Benefícios para sua empresa</h2> 
     <div class="container-beneficios">
       <ul class="container-cards-beneficios">
         <li class="card-beneficios" id="card-beneficios01"><i class="fa-solid fa-leaf"></i> <strong>Controle preciso das finanças</strong><p>mantenha sua empresa sempre em dia com a legislação, evitando multas, juros e problemas com o fisco.</p> </li> 
-        <li class="card-beneficios" id="card-beneficios02"><i class="fa-solid fa-file-invoice-dollar"></i> <strong>Conformidade com normas fiscais e legais</strong> tenha acesso a informações confiáveis para tomar decisões mais seguras e planejar o crescimento do seu negócio.</li>
+        <li class="card-beneficios" id="card-beneficios02"><i class="fa-solid fa-file-invoice-dollar"></i> <strong>Conformidade com normas fiscais e legais</strong> <p>tenha acesso a informações confiáveis para tomar decisões mais seguras e planejar o crescimento do seu negócio.</p></li>
       </ul>
       <ul class="container-cards-beneficios">
-        <li class="card-beneficios" id="card-beneficios03"><i class="fa-solid fa-chart-line"></i> <strong>Relatórios claros e confiáveis</strong>contabilidade adaptada à realidade do produtor rural, com foco em simplificar a burocracia e dar mais tempo para você se dedicar à produção.</li>
-        <li class="card-beneficios" id="card-beneficios04"><i class="fa-solid fa-tractor"></i> <strong>Soluções adaptadas ao produtor rural</strong>conte com o suporte da Agro Control para esclarecer dúvidas e oferecer orientações que realmente fazem diferença no dia a dia.
+        <li class="card-beneficios" id="card-beneficios03"><i class="fa-solid fa-chart-line"></i> <strong>Relatórios claros e confiáveis</strong><p>contabilidade adaptada à realidade do produtor rural, com foco em simplificar a burocracia e dar mais tempo para você se dedicar à produção.</p></li>
+        <li class="card-beneficios" id="card-beneficios04"><i class="fa-solid fa-tractor"></i> <strong>Soluções adaptadas ao produtor rural</strong><p>conte com o suporte da Agro Control para esclarecer dúvidas e oferecer orientações que realmente fazem diferença no dia a dia.</p>
       </li>
     </ul></li>
       </ul>
@@ -98,19 +96,65 @@
 
   <!-- CTA -->
   <section class="cta">
-    <div class="container">
-      <h2>Quer saber mais sobre a Contabilidade Geral?</h2>
-      <p>Entre em contato com a Agro Control e descubra como podemos ajudar sua empresa a crescer com segurança e eficiência.</p>
-      <a href="contato.html" class="btn">Fale Conosco</a>
+    <div class="container-cta" id="container-cta">
+      <div class="cta-card-text">
+        <h2>Quer saber mais sobre a Contabilidade Geral?</h2>
+        <p>Entre em contato com a Agro Control e descubra como podemos ajudar sua empresa a crescer com segurança e eficiência.</p>
+        <a href="contato.html" class="button-quem-somos" id="button-quem-somos">Fale Conosco</a>
+      </div>
+      <picture class="img-card-cta"></picture>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Agro Control. Todos os direitos reservados.</p>
+  <footer class="main-footer">
+  <div class="footer-container">
+    
+    <!-- Logo e breve descrição -->
+    <div class="footer-col">
+      <img src="./src/img/MODELO LOGO (SIMBOLO) NEGATIVO.png" alt="Logo Agro Control" class="footer-logo">
+      <p>Agro Control — Contabilidade que entende de negócios e pessoas.<br>
+      Parceira estratégica em gestão fiscal, contabilidade e estruturação empresarial.</p>
     </div>
-  </footer>
+
+    <!-- Navegação rápida -->
+    <div class="footer-col">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="#animate__home-content">Home</a></li>
+        <li><a href="#container-quem-somos">Quem somos</a></li>
+        <li><a href="#container-nossos-servicos">Serviços</a></li>
+        <li><a href="">Especialidades</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p><i class="fa-solid fa-phone"></i> <a href="tel:+5577998640849">+55 (77) 99864-0849</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5577999665814" target="_blank">+55 (77) 9 9966-5814</a></p>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:cc.contabilidade.marketing@gmail.com">cc.contabilidade.marketing@gmail.com</a></p>
+      <p><i class="fa-solid fa-location-dot"></i> R. Rui Barbosa - Centro,<br> Luís Eduardo Magalhães - BA</p>
+      <p><i class="fa-solid fa-clock"></i> Seg a Sex, 8h às 18h</p>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="footer-col">
+      <h3>Redes sociais</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Direitos autorais -->
+  <div class="footer-bottom">
+    <p>© 2025 Agro Control. Todos os direitos reservados.</p>
+  </div>
   <script src="./src/scripts/menu-mobile.js"></script>
   <script src="./src/scripts/main.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
