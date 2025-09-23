@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site em Manutenção | Agro Control</title>
+  <meta name="description" content="Nosso site está temporariamente em manutenção. Em breve estaremos de volta para melhor atender você.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #333;
+      margin: 0;
+    }
+
+    .maintenance-container {
+      max-width: 600px;
+    }
+
+    .maintenance-container img {
+      max-width: 450px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .contact-link {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #28a745;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-link:hover {
+      background: #218838;
+    }
+    @media (min-width: 0px) and (max-width: 900px) {
+        .maintenance-container img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="maintenance-container">
+    <!-- VETOR (pode trocar pelo seu vetor preferido em .svg ou .png) -->
+    <img src="./src/img/manutenção.webp" alt="Manutenção">
+
+    <h1>Estamos em manutenção</h1>
+    <p>Nosso site está passando por melhorias para oferecer a você a melhor experiência.<br>
+    Voltaremos em breve!</p>
+
+    <a href="mailto:cc.contabilidade.marketing@gmail.com" class="contact-link">
+      Entre em contato conosco
+    </a>
+  </div>
+</body>
+</html>
