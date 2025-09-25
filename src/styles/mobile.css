@@ -24,6 +24,10 @@
   
 }
 
+.container-quem-somos {
+  flex-direction: column;
+}
+
 .sobre-nos-img {
   display: flex;
   height: 80%;
@@ -219,7 +223,7 @@
     display: flex;
     background-image: url(../img/sobre-nos-img.webp);
     width: 400px;
-    height: 400px;
+    height: 350px;
     background-position-y: -150px;
     align-self: flex-end;
   }
