@@ -69,6 +69,10 @@ let lastScroll = 0;
 
     const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
+   autoplay: {
+   delay: 2000, // Set to 0 for continuous, or a value in ms for timed autoplay
+   disableOnInteraction: true, // Prevents autoplay from stopping on user interaction
+  },
       spaceBetween: 7,
       navigation: {
         nextEl: ".element-prev",
@@ -84,12 +88,12 @@ let lastScroll = 0;
           slidesPerView: 1,
           spaceBetween: 10,
         },
-        "@0.75": {
+        "@0.60": {
           slidesPerView: 2,
           spaceBetween: 20,
         },
         "@1.00": {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 40,
         },
         "@1.50": {
