@@ -69,10 +69,6 @@ let lastScroll = 0;
 
     const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-   autoplay: {
-   delay: 2000, // Set to 0 for continuous, or a value in ms for timed autoplay
-   disableOnInteraction: true, // Prevents autoplay from stopping on user interaction
-  },
       spaceBetween: 7,
       navigation: {
         nextEl: ".element-prev",
@@ -99,6 +95,34 @@ let lastScroll = 0;
         "@1.50": {
           slidesPerView: 4,
           spaceBetween: 20,
+        },
+      },
+    });
+    
+    const swiper2 = new Swiper('.swiperteam', {
+      slidesPerView: 1,
+      spaceBetween: 7,
+      navigation: {
+        nextEl: ".element-prev2",
+        prevEl: ".element-next2",
+      },
+      loop: true,
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        "@0.60": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 10,
         },
       },
 });

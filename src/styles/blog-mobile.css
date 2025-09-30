@@ -15,4 +15,12 @@
 .outras-noticias {
     margin: 0px;
 }
+
+.post-content {
+  width: 100%;
+}
+
+.outras-noticias {
+    height: auto;
+}
 }

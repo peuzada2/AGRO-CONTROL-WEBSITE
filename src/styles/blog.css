@@ -1,12 +1,29 @@
+:root {
+  --bg: #363636; /* slate-900 */
+  --text: #ffffff; /* slate-200 */
+  --accent: #22d3ee; /* cyan-400 */
+  --main-color: #006631;
+}
+
 body {
-  font-family: Arial, sans-serif;
+
   margin: 0;
   background: #f8f9fa;
   color: #333;
 }
 
 h3 {
+  margin-bottom: 10px;
+}
+
+h3, h2 {
     margin-top: 10px;
+    color: #006631;
+    font-size: 1.7rem
+}
+
+p, ul, li, blockquote {
+  font-size: 1.2rem;
 }
 
 /* HERO */
@@ -27,7 +44,9 @@ h3 {
 }
 
 #mainHeader {
+  justify-self: center;
     justify-content: space-between;
+    max-width: 1200px;
 }
 
 .text-post-hero {
@@ -65,10 +84,13 @@ h3 {
   margin-bottom: 20px;
 }
 
+.post-content {
+  width: 70%;
+}
+
 .post-content h2 {
   margin-top: 30px;
-  font-size: 1.4rem;
-  color: #2c3e50;
+  color: #006631;
 }
 .post-content p {
   line-height: 1.6;
@@ -81,7 +103,7 @@ h3 {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 20px;
-  background: #2c3e50;
+  background: #006631;
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -93,7 +115,7 @@ h3 {
 
 .outras-noticias {
   background: #f9f9f9;
-  height: 300px;
+  height: 200px;
   border-left: 4px solid #2e7d32;
   padding: 20px;
   margin-top: 40px;

@@ -35,8 +35,10 @@
 
 .sobre-nos-img {
   display: flex;
-  width: 100%;
-  background-position-y: -320px;
+  align-self: flex-end;
+  background-size: cover;
+  width: 60%;
+  background-position-y: -220px;
 }
 
 .container-beneficios {
@@ -258,9 +260,32 @@
     padding: 0px;
   }
 
+  .card-time {
+  padding: 90px 0px 20px 0px;
+  }
+
+  .container-nosso-time {
+    margin: 0px 30px;
+  }
+
   .card {
     padding: 10px 40px;
   }
+
+  .element-prev2{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    right: 0px;
+  }
+
+  .element-next2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    left: 0px;
+  }
+
   .element-prev {
     top: 30%;
     width: 30px;
@@ -342,8 +367,13 @@
  .card-beneficios {
   margin: 0px;
   width: 90%;
-  padding: 0px;
+
  }
+
+  .benefits h2 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+  }
 
  .benefits p {
   text-align: center;
