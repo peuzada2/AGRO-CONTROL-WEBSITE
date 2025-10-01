@@ -244,6 +244,7 @@ a:hover {
 }
 
 .container-nosso-time {
+  width: 100%;
   margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -270,7 +271,7 @@ a:hover {
   z-index: 1000;
   position: absolute;
   height: 100%;
-  width: 200px;
+  width: 100px;
   background: linear-gradient(-90deg, #fff, transparent);
 }
 
@@ -280,23 +281,29 @@ a:hover {
   z-index: 1000;
   position: absolute;
   height: 100%;
-  width: 200px;
+  width: 100px;
   background: linear-gradient(90deg, #fff, transparent);
 }
-
 
 .card-time {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #333;
-  color: #fff;
+  background: #e6e6e6;
+  color: #252525;
   height: auto;
   border-radius: 12px;
   padding: 90px 30px 20px 30px;
   width: auto;
   text-align: center;
   position: relative;
+  transition: all ease-in-out 0.2s;
+}
+
+.card-time:hover {
+    z-index: 10;
+    position: relative;
+    transform: translatey(-10px)
 }
 
 .card-time-img {
@@ -306,11 +313,51 @@ a:hover {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #111;
-  background-image: url(../img/COLABORADORES/JOÃO\ VITOR.JPG);
+  border: 3px solid #006631;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#card-time-img01 {
+  background-image: url(../img/COLABORADORES/JOÃO\ VITOR.JPG);
+}
+
+#card-time-img02 {
+  background-image: url(../img/COLABORADORES/MEIRELLE.JPG);
+}
+
+#card-time-img03 {
+  background-image: url(../img/COLABORADORES/EMERSON\ C.JPG);
+}
+
+#card-time-img04 {
+  background-image: url(../img/COLABORADORES/GUSTAVO\ R.JPG);
+}
+
+#card-time-img05 {
+  background-image: url(../img/COLABORADORES/GUSTAVO\ B.JPG);
+}
+
+#card-time-img06 {
+  background-image: url(../img/COLABORADORES/DANIELE-SANTOS.JPG);
+}
+
+
+#card-time-img07 {
+  background-image: url(../img/COLABORADORES/THÁLITA.JPG);
+}
+
+#card-time-img08 {
+  background-image: url(../img/COLABORADORES/JEFERSON.PNG);
+}
+
+#card-time-img09 {
+  background-image: url(../img/COLABORADORES/GABRIEL.PNG);
+}
+
+#card-time-img10 {
+  background-image: url(../img/COLABORADORES/IMG_3504.JPG);
 }
 
 .logo-abetri {
@@ -341,7 +388,7 @@ a:hover {
 
 .role {
   font-size: 0.75rem;
-  color: #7dd3fc;
+  color: #006631;
   margin: 4px 0 10px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -350,7 +397,7 @@ a:hover {
 .skills {
   font-size: 0.9rem;
   margin-bottom: 18px;
-  color: #ddd;
+  color: #363636;
 }
 
 .previous {
@@ -632,7 +679,7 @@ a:hover {
     }
 
     .card:hover {
-      z-index: 10000;
+      z-index: 10;
       position: relative;
       transform: translatey(-10px)
     }
@@ -656,7 +703,7 @@ a:hover {
       height: 30px;
       position: absolute;
       top: 40%;
-      left: 40px;
+      left: 0;
       font-weight: 900;
       color: #fff;
       background-color: #006631;
@@ -697,10 +744,10 @@ a:hover {
       height: 30px;
       position: absolute;
       top: 40%;
-      right: 40px;
+      right: 0;
       font-weight: 900;
-      color: #006631;
-      background-color: #ffffff;
+      color: #fff;
+      background-color: #006631;
       box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.582);
       cursor: pointer;
       transition: 0.2s ease-in-out;

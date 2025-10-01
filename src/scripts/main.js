@@ -100,8 +100,10 @@ let lastScroll = 0;
     });
     
     const swiper2 = new Swiper('.swiperteam', {
-      slidesPerView: 1,
-      spaceBetween: 7,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+      },
       navigation: {
         nextEl: ".element-prev2",
         prevEl: ".element-next2",
@@ -114,7 +116,7 @@ let lastScroll = 0;
         },
         "@0.60": {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         "@1.00": {
           slidesPerView: 3,
