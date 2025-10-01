@@ -249,13 +249,23 @@ a:hover {
     margin-right: auto;
     position: relative;
     list-style: none;
-    padding: 60px 0px;
+    padding: 90px 0px;
     z-index: 1;
     justify-content: center;
     height: 300px;
     display: flex;
     flex-direction: column;
   overflow-x: hidden;
+}
+
+.text-container-nosso-time {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: -80px;
+  width: 100%;
+  font-size: 2em;
+  color: #006631;
 }
 
 .swiper-time {
