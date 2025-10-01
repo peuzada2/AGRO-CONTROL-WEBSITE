@@ -51,6 +51,31 @@
 
 }
 
+@media (min-width: 0px) and (max-width: 721px) {
+
+  .container-nosso-time {
+    padding: 100px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .title-nosso-time {
+    font-size: 2em;
+  }
+
+  .card-time {
+  padding: 90px 20px 20px 20px;
+  height: 200px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 900px) {
+  .card-time {
+    height: 180px;
+    margin: 0px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 900px)  {
 
   #mainHeader {
@@ -258,11 +283,6 @@
 
   .container-avaliacao {
     padding: 0px;
-  }
-
-  .card-time {
-  padding: 90px 0px 20px 0px;
-  margin: 0px 30px;
   }
 
   .card {

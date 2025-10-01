@@ -102,7 +102,7 @@ let lastScroll = 0;
     const swiper2 = new Swiper('.swiperteam', {
       centeredSlides: true,
       autoplay: {
-        delay: 5000,
+        delay: 4000,
       },
       navigation: {
         nextEl: ".element-prev2",
