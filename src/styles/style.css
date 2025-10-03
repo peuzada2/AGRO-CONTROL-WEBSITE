@@ -330,39 +330,6 @@ a:hover {
   background-size: cover;
 }
 
-#card-time-img01 {
-  background-image: url(../img/COLABORADORES/JOÃO\ VITOR.JPG);
-}
-
-#card-time-img02 {
-  background-image: url(../img/COLABORADORES/MEIRELLE.JPG);
-}
-
-#card-time-img03 {
-  background-image: url(../img/COLABORADORES/EMERSON\ C.JPG);
-}
-
-#card-time-img04 {
-  background-image: url(../img/COLABORADORES/GUSTAVO\ R.JPG);
-}
-
-#card-time-img05 {
-  background-image: url(../img/COLABORADORES/GUSTAVO\ B.JPG);
-}
-
-#card-time-img06 {
-  background-image: url(../img/COLABORADORES/DANIELE-SANTOS.JPG);
-}
-
-
-#card-time-img07 {
-  background-image: url(../img/COLABORADORES/THÁLITA.JPG);
-}
-
-#card-time-img08 {
-  background-image: url(../img/COLABORADORES/JEFERSON.PNG);
-}
-
 #card-time-img09 {
   background-image: url(../img/COLABORADORES/GABRIEL.PNG);
 }
@@ -633,7 +600,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
-  background-image: url(../img/visite-nos-bg.webp);
+  background-image: linear-gradient(-155deg, #006631, #0ea74e);
   width: 100%;
   height: auto;
 }
@@ -682,7 +649,7 @@ a:hover {
       font-size: 0.9em;
       color: rgb(20, 20, 20);
       justify-content: flex-start;
-      border: 2px solid rgba(0, 0, 0, 0.514);
+      border: 1px solid #363636;
       align-items: left;
       padding: 10px 40px 20px 30px;
       margin: 10px 0px 20px 0px;
