@@ -136,7 +136,7 @@ header {
   background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 30px;
+  border-radius: 60px;
   border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 15px 20px;
@@ -328,14 +328,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-#card-time-img09 {
-  background-image: url(../img/COLABORADORES/GABRIEL.PNG);
-}
-
-#card-time-img10 {
-  background-image: url(../img/COLABORADORES/IMG_3504.JPG);
 }
 
 .logo-abetri {

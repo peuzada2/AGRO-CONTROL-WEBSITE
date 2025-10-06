@@ -381,10 +381,15 @@
   gap: 30px;
  }
 
+ .container-cards-beneficios {
+  width: 90%;
+ }
+
+
  .card-beneficios {
   margin: 0px;
-  width: 90%;
-
+  width: 80%;
+  padding: 60px 20px;
  }
 
   .benefits h2 {
@@ -393,7 +398,6 @@
   }
 
  .benefits p {
-  text-align: center;
   margin-bottom: 15px;
  }
 
