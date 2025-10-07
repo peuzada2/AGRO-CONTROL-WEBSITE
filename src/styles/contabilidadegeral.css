@@ -57,19 +57,24 @@ html {
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  gap: 20px;
+  gap: 40px;
   padding: 60px 30px 60px 120px;
   border-radius: 20px;
 }
 
 .about-service h2 {
-  font-size: 2.5em;
+  text-transform: uppercase;
+  font-size: 2.8rem;
   font-weight: 800;
 }
 
 .about-service p {
-  font-size: 1.3em;
+  font-size: 1.5rem;
   color: #363636;
+}
+
+.about-service a {
+  font-size: 1.4rem;
 }
 
 .trator-about-service {
@@ -122,7 +127,7 @@ html {
   background-color: rgb(233, 233, 233);
   height: auto;
   width: 50%;
-  padding: 50px 30px;
+  padding: 50px 30px 20px 30px;
   transition: all 0.2s ease-in;
   border-radius: 1.6rem;
   text-align: left;
