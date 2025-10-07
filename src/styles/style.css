@@ -620,6 +620,7 @@ a:hover {
   height: auto;
   position: absolute;
   -webkit-overflow-scrollin: hidden;
+  margin-bottom: 40px;
 }
 
 .swiper-slide {
@@ -747,6 +748,8 @@ a:hover {
 
     .element-prev:hover, .element-next:hover {
       scale: 1.05;
+      color: white;
+      background-color: #006631;
     }
 
     .perfil-avaliacao {
@@ -832,54 +835,20 @@ a:hover {
       object-fit: cover;
     }
 
-    .container-maps {
+    .title-avaliacao {
       display: flex;
-      justify-content: space-around;
+      width: auto;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
       align-items: center;
-      padding: 0px 70px;
-      color: white;
-    }
-
-    .container-entre-em-contato > h1 {
       text-align: center;
-      color: white;
-      padding: 0px 20px;
-      font-size: 5em;
-      padding: 30px 0px 0px 0px;
-      display: flex;
-      justify-self: center;
-    }
-
-    .localizacao-vector {
-      background-image: url(../img/2300231.png);
-      display: flex;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 50%;
-      height: 500px;
-    }
-
-    .container-maps a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .container-maps i {
-      font-size: 1.3em;
-      margin-right: 5px;
-    }
-
-    .container-maps strong {
-      color: white;
-      font-size: 1.3em;
-    }
-
-    .google-map {
-      border-radius: 10px;
     }
 
      .main-footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background:white;
       color:#363636;
       padding:40px 20px 20px;
@@ -889,9 +858,14 @@ a:hover {
     .footer-container{
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap:30px;
+      gap:20px;
       max-width:1200px;
       margin:0 auto;
+    }
+
+    .google-maps {
+      border-radius: 20px;
+      border: 3px solid #006631;
     }
     .footer-col h3{
       font-size:18px;
