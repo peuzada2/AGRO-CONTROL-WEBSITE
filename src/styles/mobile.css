@@ -34,11 +34,12 @@
 }
 
 .sobre-nos-img {
-  display: flex;
-  align-self: flex-end;
-  background-size: cover;
-  width: 60%;
-  background-position-y: -220px;
+          display: flex;
+        background-image: url(../img/sobre-nos-img.webp);
+        width: 400px;
+        height: 450px;
+          background-size: cover;
+        align-self: flex-end;
 }
 
 .container-beneficios {
@@ -260,7 +261,7 @@
     background-image: url(../img/sobre-nos-img.webp);
     width: 400px;
     height: 350px;
-    background-position-y: -150px;
+    background-size: contain;
     align-self: flex-end;
   }
 
@@ -430,6 +431,11 @@
   .img-card-cta {
     height: 300px;
     width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 

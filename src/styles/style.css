@@ -59,14 +59,13 @@ h1 {
   align-items: flex-start;
   flex-wrap: wrap;
   background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 30px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 40px;
   margin-top: 80px;
-
   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
@@ -226,8 +225,8 @@ a:hover {
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -250px;
+  background-size: contain;
+  background-position: right;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -839,10 +838,16 @@ a:hover {
       display: flex;
       width: auto;
       justify-content: center;
-      margin-bottom: 20px;
       font-size: 2rem;
       align-items: center;
       text-align: center;
+    }
+
+    #sub-title-avaliacao {
+      font-size: 1em;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 20px;
     }
 
      .main-footer{
