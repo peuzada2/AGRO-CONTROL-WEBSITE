@@ -54,11 +54,11 @@ h1 {
 
 .title-main-div {
   margin-left: 90px;
-  width: 500px;
+  width: auto;
   color: var(--text);
   align-items: flex-start;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
+ background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 30px;
@@ -75,8 +75,17 @@ h1 {
 }
 
 .title-main-div > h1 {
-  line-height: 50px;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: auto;
+}
+
+.title-main-div strong {
+  font-weight: 800;
+  background-color: white;
+  padding: 0px 20px;
+  color: #006631;
 }
 
 .button-home {
@@ -107,6 +116,78 @@ h1 {
   width: 400px;
   margin-bottom: 30px;
 }
+
+/* Container ocupa largura total */
+.container-empresas {
+  position: relative;
+  top: -70px;
+  width: 100%;
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Botão único sobre o carrossel */
+.btn-sobre-empresas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #006631;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+
+.container-empresas:hover .btn-sobre-empresas {
+  opacity: 1;
+}
+
+/* Swiper ocupa tela toda */
+.swiper-empresas {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* Cada logo responsivo */
+.swiper-slide-empresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide-empresa img {
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-empresa img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn-sobre-empresas {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .swiper-slide-empresa img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
+
 
 header {
   display: flex;
@@ -614,7 +695,7 @@ a:hover {
   margin-bottom: 40px;
 }
     
-.swiper {
+.swiper-avaliacao {
   width: 90%;
   height: auto;
   position: absolute;

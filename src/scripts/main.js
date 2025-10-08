@@ -49,6 +49,12 @@ revelar.reveal('.container-cta', {
     distance:'90px' 
 });
 
+revelar.reveal('.blog-container-cards', { 
+    delay: 350,
+    duration: 1200,
+    distance:'90px' 
+});
+
 
 let lastScroll = 0;
     const header = document.getElementById("mainHeader");
@@ -128,3 +134,23 @@ let lastScroll = 0;
         },
       },
 });
+
+  var swiperEmpresas = new Swiper(".swiper-empresas", {
+    slidesPerView: 5, // quantos logos aparecem
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 0, // sem pausa
+      disableOnInteraction: false,
+    },
+    speed: 4000, // velocidade do loop
+    freeMode: true,
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 2 },
+      480: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 }
+    }
+    });

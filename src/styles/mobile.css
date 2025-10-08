@@ -249,10 +249,15 @@
 
   .animate__home-content {
     justify-content: center;
+    padding-bottom: 50px;
     align-items: end;
     background-size: cover;
     background-position:center;
     background-image: url(../img/img-main-bg-min-mobile.webp);
+  }
+
+  .container-empresas {
+    top: -50px;
   }
 
 
