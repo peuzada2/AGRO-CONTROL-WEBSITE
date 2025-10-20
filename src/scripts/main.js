@@ -31,15 +31,21 @@ revelar.reveal('#ns-04', {
     distance:'90px' 
 });
 
+revelar.reveal('#ns-05', { 
+    delay: 160,
+    duration: 800,
+    distance:'90px' 
+});
+
 revelar.reveal('#contact-grid', { 
     delay: 160,
     duration: 800,
     distance:'90px' 
 });
 
-revelar.reveal('.trator-about-service', { 
-    delay: 350,
-    duration: 1200,
+revelar.reveal('.container-about-service', { 
+    delay: 150,
+    duration: 800,
     distance:'90px' 
 });
 
@@ -140,8 +146,10 @@ let lastScroll = 0;
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 0, // sem pausa
-      disableOnInteraction: false,
+      delay: 0, // sem intervalo entre slides
+    disableOnInteraction: false, // não para se o usuário interagir
+    pauseOnMouseEnter: false, // não pausa no hover
+    stopOnLastSlide: false // continua mesmo no último
     },
     speed: 4000, // velocidade do loop
     freeMode: true,
@@ -154,3 +162,14 @@ let lastScroll = 0;
       1024: { slidesPerView: 5 }
     }
     });
+
+    //abrir janela avaliacao
+
+    // function abrirjanela(){
+    //   document.getElementById("meuModal").style.display = "flex";
+    // }
+
+    // function fecharjanela(){
+    //   document.getElementById("meuModal").style.display = "none"
+
+    // }

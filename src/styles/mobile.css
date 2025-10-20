@@ -203,6 +203,10 @@
   padding: 60px 30px;
 }
 
+#ns-04 {
+  width: 80%;
+}
+
 #button-ns-card {
     border: 2px solid var(--text);
     color: var(--text);
@@ -249,15 +253,22 @@
 
   .animate__home-content {
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     align-items: end;
     background-size: cover;
     background-position:center;
     background-image: url(../img/img-main-bg-min-mobile.webp);
   }
 
+  .swiper-slide-empresa img {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
   .container-empresas {
-    top: -50px;
+    top: -80px;
   }
 
 
@@ -345,13 +356,16 @@
   
   .about-service {
     display: flex;
+    padding: 0px 20px;
     flex-direction: column;
+    height: auto;
   }
 
   .trator-about-service {
     width: 100%;
-    height: 400px;
-    background-size: cover;
+    height: 300px;
+    background-position-x: 20px;
+    background-size: contain;
   }
 
   .about-service h2 {
@@ -386,6 +400,7 @@
 
  .benefits p {
   margin-bottom: 15px;
+  text-align: center;
  }
 
   .container-about-service {
@@ -394,7 +409,22 @@
   padding: 30px 15px 0px 15px;
   text-align: center;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
   justify-content: center;
+  }
+
+  .container-nosso-time {
+    padding: 80px 0px;
+  }
+
+  .title-nosso-time {
+    font-size: 1.6rem;
+  }
+
+  .container-about-service a {
+    font-size: 1em;
+    width: 50%;
   }
 
   .container-cards-beneficios {
@@ -442,5 +472,31 @@
     display: flex;
     flex-direction: column;
   }
+  
+  .container-about-service {
+    padding: 0px;
+  }
+
+  .about-service {
+    gap: 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .about-service p {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .about-service h2 {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .trator-about-service{
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+  }
+ 
 }
 
