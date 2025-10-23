@@ -359,6 +359,7 @@
     padding: 0px 20px;
     flex-direction: column;
     height: auto;
+    font-size: 1.4em;
   }
 
   .trator-about-service {
@@ -385,7 +386,6 @@
  .container-cards-beneficios {
   width: 90%;
  }
-
 
  .card-beneficios {
   margin: 0px;
