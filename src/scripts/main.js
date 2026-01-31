@@ -31,19 +31,31 @@ revelar.reveal('#ns-04', {
     distance:'90px' 
 });
 
+revelar.reveal('#ns-05', { 
+    delay: 160,
+    duration: 800,
+    distance:'90px' 
+});
+
 revelar.reveal('#contact-grid', { 
     delay: 160,
     duration: 800,
     distance:'90px' 
 });
 
-revelar.reveal('.trator-about-service', { 
+revelar.reveal('.container-about-service', { 
+    delay: 150,
+    duration: 800,
+    distance:'90px' 
+});
+
+revelar.reveal('.container-cta', { 
     delay: 350,
     duration: 1200,
     distance:'90px' 
 });
 
-revelar.reveal('.container-cta', { 
+revelar.reveal('.blog-container-cards', { 
     delay: 350,
     duration: 1200,
     distance:'90px' 
@@ -102,7 +114,7 @@ let lastScroll = 0;
     const swiper2 = new Swiper('.swiperteam', {
       centeredSlides: true,
       autoplay: {
-        delay: 5000,
+        delay: 4000,
       },
       navigation: {
         nextEl: ".element-prev2",
@@ -128,3 +140,36 @@ let lastScroll = 0;
         },
       },
 });
+
+  var swiperEmpresas = new Swiper(".swiper-empresas", {
+    slidesPerView: 5, // quantos logos aparecem
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 0, // sem intervalo entre slides
+    disableOnInteraction: false, // não para se o usuário interagir
+    pauseOnMouseEnter: false, // não pausa no hover
+    stopOnLastSlide: false // continua mesmo no último
+    },
+    speed: 4000, // velocidade do loop
+    freeMode: true,
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 2 },
+      480: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 }
+    }
+    });
+
+    //abrir janela avaliacao
+
+    // function abrirjanela(){
+    //   document.getElementById("meuModal").style.display = "flex";
+    // }
+
+    // function fecharjanela(){
+    //   document.getElementById("meuModal").style.display = "none"
+
+    // }

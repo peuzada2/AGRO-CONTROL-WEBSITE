@@ -9,3 +9,65 @@
 #indice-blog-bg {
     background-image: url(../img/IMG_3334.jpg);
 }
+
+#card-time-img01 {
+  background-image: url(../img/COLABORADORES/JOÃO\ VITOR.JPG);
+}
+
+#card-time-img02 {
+  background-image: url(../img/COLABORADORES/MEIRELLE-PERFIL.jpg);
+}
+
+#card-time-img03 {
+  background-image: url(../img/COLABORADORES/EMERSON-PF.JPG);
+}
+
+#card-time-img04 {
+  background-image: url(../img/COLABORADORES/GUSTAVO-PF.jpg);
+}
+
+#card-time-img05 {
+  background-image: url(../img/COLABORADORES/GUSTAVOB-PF.JPG);
+}
+
+#card-time-img06 {
+  background-image: url(../img/COLABORADORES/DANIELE-PERFIL.jpg);
+}
+
+
+#card-time-img07 {
+  background-image: url(../img/COLABORADORES/THÁLITA-PF.jpg);
+}
+
+#card-time-img08 {
+  background-image: url(../img/COLABORADORES/JEFERSON.PNG);
+}
+
+#card-time-img09 {
+  background-image: url(../img/COLABORADORES/GABRIEL.PNG);
+}
+
+#card-time-img10 {
+  background-image: url(../img/COLABORADORES/PEDRO-PF.jpg);
+}
+
+#card-time-img11 {
+  background-image: url(../img/COLABORADORES/ALLAN.JPG);
+}
+
+#ativos-e-passivos-img {
+  background-image: url(../img/ATIVOSEPASSIVOS.webp);
+}
+
+#contabilidadegeral-img {
+  background-image: url(https://plus.unsplash.com/premium_photo-1679496829715-364b4a17e087?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687);
+}
+
+#produtorrural-img {
+  background-image: url(https://plus.unsplash.com/premium_photo-1663040294799-04609cd9e92b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687);
+  background-position-y: -250px;
+}
+
+#bpofinanceiro-img {
+  background-image: url(https://images.unsplash.com/flagged/photo-1553267252-d100936057c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170);
+}

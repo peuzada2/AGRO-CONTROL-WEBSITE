@@ -54,19 +54,18 @@ h1 {
 
 .title-main-div {
   margin-left: 90px;
-  width: 500px;
+  width: auto;
   color: var(--text);
   align-items: flex-start;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+ background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 30px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 40px;
   margin-top: 80px;
-
   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
@@ -76,8 +75,17 @@ h1 {
 }
 
 .title-main-div > h1 {
-  line-height: 50px;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: auto;
+}
+
+.title-main-div strong {
+  font-weight: 800;
+  background-color: white;
+  padding: 0px 20px;
+  color: #006631;
 }
 
 .button-home {
@@ -109,6 +117,78 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Container ocupa largura total */
+.container-empresas {
+  position: relative;
+  top: -70px;
+  width: 100%;
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Botão único sobre o carrossel */
+.btn-sobre-empresas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #006631;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+
+.container-empresas:hover .btn-sobre-empresas {
+  opacity: 1;
+}
+
+/* Swiper ocupa tela toda */
+.swiper-empresas {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* Cada logo responsivo */
+.swiper-slide-empresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide-empresa img {
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-empresa img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn-sobre-empresas {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .swiper-slide-empresa img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
+
+
 header {
   display: flex;
   padding-top: 30px;
@@ -136,7 +216,7 @@ header {
   background: linear-gradient(135deg, rgba(90, 90, 90, 0.342), rgba(59, 59, 59, 0.267));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 30px;
+  border-radius: 60px;
   border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 15px 20px;
@@ -181,7 +261,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 90vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -226,8 +306,8 @@ a:hover {
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -200px;
+  background-size: contain;
+  background-position: right;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -258,6 +338,7 @@ a:hover {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .text-container-nosso-time {
   display: flex;
   position: relative;
@@ -266,6 +347,17 @@ a:hover {
   width: 100%;
   font-size: 2em;
   color: #006631;
+=======
+.title-nosso-time {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  font-size: 2em;
+  color: #006631;
+  text-align: center;
+>>>>>>> 3f316d75cceb10fd57bfd863f72d4641d44ca654
 }
 
 .swiper-time {
@@ -301,7 +393,7 @@ a:hover {
   align-items: center;
   background: #e6e6e6;
   color: #252525;
-  height: auto;
+  height: 160px;
   border-radius: 12px;
   padding: 90px 30px 20px 30px;
   width: auto;
@@ -327,47 +419,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-#card-time-img01 {
-  background-image: url(../img/COLABORADORES/JOÃO\ VITOR.JPG);
-}
-
-#card-time-img02 {
-  background-image: url(../img/COLABORADORES/MEIRELLE.JPG);
-}
-
-#card-time-img03 {
-  background-image: url(../img/COLABORADORES/EMERSON\ C.JPG);
-}
-
-#card-time-img04 {
-  background-image: url(../img/COLABORADORES/GUSTAVO\ R.JPG);
-}
-
-#card-time-img05 {
-  background-image: url(../img/COLABORADORES/GUSTAVO\ B.JPG);
-}
-
-#card-time-img06 {
-  background-image: url(../img/COLABORADORES/DANIELE-SANTOS.JPG);
-}
-
-
-#card-time-img07 {
-  background-image: url(../img/COLABORADORES/THÁLITA.JPG);
-}
-
-#card-time-img08 {
-  background-image: url(../img/COLABORADORES/JEFERSON.PNG);
-}
-
-#card-time-img09 {
-  background-image: url(../img/COLABORADORES/GABRIEL.PNG);
-}
-
-#card-time-img10 {
-  background-image: url(../img/COLABORADORES/IMG_3504.JPG);
 }
 
 .logo-abetri {
@@ -469,6 +520,7 @@ a:hover {
   background-color: white;
   border-radius: 20px;
   gap: 20px;
+  text-align: left;
   width: 50%;
   border: solid 3px #00a34f00;
   transition: ease-in-out 0.2s;
@@ -495,12 +547,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.card-ns > a:hover {
-  opacity: 0.8;
-}
-
 .card-ns > a > i {
-  color: var(--main-color);
   margin-left: 10px;
 }
 
@@ -518,20 +565,30 @@ a:hover {
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 800px;
-  gap: 40px;
+  background-size: 900px;
+  gap: 20px;
   background-image: url(../img/background-card-ns-min.webp);
+  color: white;
+  width: 40%;
+}
+
+#ns-04 > h1, #ns-04 i, #ns-04 .elementor-divider{
   color: white;
 }
 
-#ns-04 > h1,  #ns-04 > a, #ns-04 > a > i{
-  color: white;
+#elementor-divider-ns-04 {
+  background-color: white;
 }
 
 #button-ns-card {
   border: 2px solid var(--text);
   color: var(--text);
   width: 40%;
+  justify-content: center;
+}
+
+#button-ns-card:hover {
+  color: #363636;
 }
 
 .elementor-divider {
@@ -555,7 +612,7 @@ a:hover {
 .blog-container {
   width: 100%;
   background-color: white;
-  padding: 90px 0px;
+  padding: 60px 0px;
 }
 
 .blog-container-cards {
@@ -632,7 +689,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
-  background-image: url(../img/visite-nos-bg.webp);
+  background-image: linear-gradient(-155deg, #006631, #0ea74e);
   width: 100%;
   height: auto;
 }
@@ -655,11 +712,12 @@ a:hover {
   margin-bottom: 40px;
 }
     
-.swiper {
+.swiper-avaliacao {
   width: 90%;
   height: auto;
   position: absolute;
   -webkit-overflow-scrollin: hidden;
+  margin-bottom: 40px;
 }
 
 .swiper-slide {
@@ -681,7 +739,7 @@ a:hover {
       font-size: 0.9em;
       color: rgb(20, 20, 20);
       justify-content: flex-start;
-      border: 2px solid rgba(0, 0, 0, 0.514);
+      border: 1px solid #363636;
       align-items: left;
       padding: 10px 40px 20px 30px;
       margin: 10px 0px 20px 0px;
@@ -787,6 +845,8 @@ a:hover {
 
     .element-prev:hover, .element-next:hover {
       scale: 1.05;
+      color: white;
+      background-color: #006631;
     }
 
     .perfil-avaliacao {
@@ -872,54 +932,32 @@ a:hover {
       object-fit: cover;
     }
 
-    .container-maps {
+    .title-avaliacao {
       display: flex;
-      justify-content: space-around;
+      width: auto;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0px 10px;
       align-items: center;
-      padding: 0px 70px;
-      color: white;
-    }
-
-    .container-entre-em-contato > h1 {
       text-align: center;
-      color: white;
-      padding: 0px 20px;
-      font-size: 5em;
-      padding: 70px 0px 0px 0px;
-      display: flex;
-      justify-self: center;
     }
 
-    .localizacao-vector {
-      background-image: url(../img/2300231.png);
-      display: flex;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 50%;
-      height: 500px;
+    .title-avaliacao a {
+      margin-left: 5px;
+      color: #006631;
     }
 
-    .container-maps a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .container-maps i {
-      font-size: 1.3em;
-      margin-right: 5px;
-    }
-
-    .container-maps strong {
-      color: white;
-      font-size: 1.3em;
-    }
-
-    .google-map {
-      border-radius: 10px;
+    #sub-title-avaliacao {
+      font-size: 1em;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 20px;
     }
 
      .main-footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background:white;
       color:#363636;
       padding:40px 20px 20px;
@@ -929,15 +967,27 @@ a:hover {
     .footer-container{
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap:30px;
-      max-width:1200px;
+      gap:20px;
+      max-width:1300px;
       margin:0 auto;
     }
+
+    .google-maps {
+      border-radius: 20px;
+      border: 3px solid #006631;
+    }
+
+
     .footer-col h3{
       font-size:18px;
-      margin-bottom:10px;
+      margin-bottom: 20px;
       color:#363636;
     }
+
+    .footer-col p {
+      margin-bottom: 10px;
+    }
+
     .footer-col ul{
       list-style:none;
       padding:0;
@@ -963,11 +1013,12 @@ a:hover {
     .social-icons a{
       display:inline-block;
       margin-right:10px;
-      font-size:18px;
+      font-size: 26px;
       color:#363636;
-      transition:color .3s;
+      transition:all ease-in 0.2s;
     }
     .social-icons a:hover{
+      scale: 1.1;
       color:#6b6b6b;
     }
     .footer-bottom{
@@ -978,3 +1029,52 @@ a:hover {
       font-size:14px;
       color:#363636;
     }
+
+
+    .modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  position: fixed; 
+  z-index: 1; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: popupIn 0.4s ease forwards;
+}
+
+@keyframes popupIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      80% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+     @keyframes popupOut {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(0.7); opacity: 0; }
+    }
+
+.fechar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar:hover {
+  color: red;
+}
+
+

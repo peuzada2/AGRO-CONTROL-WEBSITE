@@ -49,37 +49,52 @@ html {
   background-color: white;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
+  height: auto;
+  gap: 40px;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 0px 0px 0px 60px;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(233, 233, 233);
 }
 
 .container-about-service {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
   gap: 20px;
-  padding: 60px 30px 60px 120px;
   border-radius: 20px;
 }
 
 .about-service h2 {
-  font-size: 2.5em;
+  font-size: 1.7rem;
   font-weight: 800;
 }
 
 .about-service p {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #363636;
+}
+
+.about-service a {
+  font-size: 1rem;
 }
 
 .trator-about-service {
   display: flex;
-  background-image: url(../img/trator.webp);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid #363636;
+  align-self: center;
   width: 50%;
-  height: 640px;
+  height: 60vh;
 }
 
 .benefits {
@@ -88,7 +103,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .container-beneficios {
@@ -110,60 +125,91 @@ html {
 .benefits p {
   font-style: italic;
   opacity: 0.9;
+  
 }
 
 .card-beneficios {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border: 3px solid rgba(56, 56, 56, 0);
-  background-image: linear-gradient(120deg, #006631, #008641);
+  background-color: rgb(233, 233, 233);
   height: auto;
   width: 50%;
-  padding: 60px 10px;
+  padding: 50px 30px 20px 30px;
   transition: all 0.2s ease-in;
-  border-radius: 32px;
-  text-align: center;
+  border-radius: 1.6rem;
+  text-align: left;
   font-size: 1.5em;
   cursor: pointer;
-  color: white;
-  gap: 20px;
+  color: #363636;
+  gap: 10px;
   font-weight: 100;
   margin: 30px 10px;
 }
 
-.card-beneficios:hover {
-  transform: scale(1.03);
-  border: 3px solid rgb(56, 56, 56);
-  box-shadow: #3636369d 5px 5px 15px;
+.card-beneficios:hover > .animate__button-beneficios {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.card-beneficios:hover > p,
+.card-beneficios:hover > strong {
+  transform: translateY(-10px);
 
 }
 
 .card-beneficios i {
   font-size: 1.3em;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+  display: flex;
+  position: relative;
+  top: -30px;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #36363644;
+  padding: 30px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
   color: #006631;
 }
 
 .card-beneficios p {
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+  transition: all 0.2s ease-in;
   font-size: 16px;
-  margin: 0px 15px;
 }
 
 .card-beneficios strong {
-  color: white;
-  font-weight: 700;
+  transition: all 0.2s ease-in;
+  color: #006631;
   font-size: 1.1em;
+  font-weight: bold;
+}
+
+.animate__button-beneficios {
+  background-color: #006631;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 3px 20px;
+  visibility: hidden;
+   opacity: 0.3;
+  transition: all ease-in 0.2s;
 }
 
 .container-cards-beneficios {
   display: flex;
-  width: 100%;
-  padding: 0px;
+  width: 90%;
   justify-content: space-around;
+  padding: 0px;
 }
 
 .cta {
@@ -199,7 +245,7 @@ html {
 }
 
 .button-quem-somos {
-  width: 30%;
+  width: 40%;
   margin: 0px;
   text-align: center;
 }
