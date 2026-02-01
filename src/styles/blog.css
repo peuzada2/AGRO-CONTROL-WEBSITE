@@ -37,7 +37,6 @@ p, ul, li, blockquote {
   height: 70vh;
   text-align: center;
   padding: 0px 20px;
-  background-image: url(../img/769.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,6 +75,10 @@ p, ul, li, blockquote {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
+}
+
+.post-content > img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.26);
 }
 .post-img {
   width: 100%;
