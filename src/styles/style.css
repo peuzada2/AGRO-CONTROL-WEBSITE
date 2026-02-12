@@ -682,6 +682,27 @@ a:hover {
   gap: 10px;
 }
 
+.blog-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.button-blog-index {
+  color: var(--text);
+  background-color: var(--main-color);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  font-weight: 600;
+}
+
+.button-blog-index:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 .container-entre-em-contato {
   display: block;
   background-position: center;
@@ -1075,5 +1096,4 @@ a:hover {
 .fechar:hover {
   color: red;
 }
-
 
